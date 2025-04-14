@@ -20,6 +20,15 @@ const searchInput = document.getElementById("searchInput");
 
 fetchAllSongs();
 
+// Set the play/pause icon to the pause icon by default
+function setDefaultIcon() {
+  if (playPauseIcon) {
+    playPauseIcon.src = "https://cdn-icons-png.flaticon.com/512/61/61180.png"; // Pause icon
+  }
+}
+
+setDefaultIcon(); // Set default icon to pause when the page loads
+
 function loadSong(index) {
   const song = songs[index];
   audio.src = song.src;
@@ -57,8 +66,8 @@ function togglePlay() {
 function updatePlayIcon(isPlaying) {
   if (playPauseIcon) {
     playPauseIcon.src = isPlaying
-      ? "https://cdn-icons-png.flaticon.com/512/727/727245.png"
-      : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjIWN9Wh2Nr651IvNzeAOFMfy3BR0pQUfncg&s";
+      ? "https://cdn-icons-png.flaticon.com/512/61/61180.png" // Play icon
+      : "https://cdn-icons-png.flaticon.com/512/727/727245.png"; // Pause icon
   }
 }
 
@@ -103,21 +112,22 @@ function renderArtists(songsToRender) {
   });
 }
 
-function renderPlaylist() {
-  const playlist = document.getElementById("playlist");
-  if (!playlist) return;
-  playlist.innerHTML = "";
-  songs.forEach((song, index) => {
-    const item = document.createElement("div");
-    item.classList.add("playlist-item");
-    item.innerHTML = `<p>${song.title} - ${song.artist}</p>`;
-    item.addEventListener("click", () => {
-      currentIndex = index;
-      loadSong(index);
-    });
-    playlist.appendChild(item);
-  });
-}
+// Removed the playlist rendering to hide it
+// function renderPlaylist() {
+//   const playlist = document.getElementById("playlist");
+//   if (!playlist) return;
+//   playlist.innerHTML = "";
+//   songs.forEach((song, index) => {
+//     const item = document.createElement("div");
+//     item.classList.add("playlist-item");
+//     item.innerHTML = `<p>${song.title} - ${song.artist}</p>`;
+//     item.addEventListener("click", () => {
+//       currentIndex = index;
+//       loadSong(index);
+//     });
+//     playlist.appendChild(item);
+//   });
+// }
 
 // Progress bar
 audio.addEventListener("timeupdate", () => {
@@ -174,7 +184,7 @@ async function fetchAllSongs() {
     songs = data.results || data; // if pagination is used
     renderFeatured(songs);
     renderArtists(songs);
-    renderPlaylist();
+    // renderPlaylist();  // Playlist rendering removed
     if (songs.length > 0) {
       playSong(songs[0]);
     }
@@ -182,3 +192,4 @@ async function fetchAllSongs() {
     console.error('Error loading songs:', err);
   }
 }
+
