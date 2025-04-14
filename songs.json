@@ -1,0 +1,84 @@
+[
+    {
+      "title": "Can't Help Falling in Love",
+      "artist": "Elvis Presley",
+      "src": "http://localhost:3000/Songs/Elvis.mp3",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/3/3c/Can%27t_Help_Falling_in_Love_by_Elvis_Presley_US_picture_sleeve.png"
+    },
+    {
+      "title": "This is What Falling in Love Feels Like",
+      "artist": "JVKE",
+      "src": "http://localhost:3000/Songs/JVKE.mp3",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM1GdgmljMVNJsxRunthYNl8R_t2NR8pdkbQ&s"
+    },
+    {
+      "title": "Secret Love Song",
+      "artist": "Little Mix",
+      "src": "http://localhost:3000/Songs/SecretLoveSong.mp3",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273995994477ea1ae8097978bf8"
+    },
+    {
+      "title": "I'm Yours",
+      "artist": "Jason Mraz",
+      "src": "http://localhost:3000/Songs/ImYours.mp3",
+      "cover": "https://images.genius.com/f0b0e7b13176526d42cccfde503bcbdd.1000x1000x1.png"
+    },
+    {
+      "title": "Lucky",
+      "artist": "Jason Mraz ft. Colbie Caillat",
+      "src": "http://localhost:3000/Songs/Lucky.mp3",
+      "cover": "https://i.pinimg.com/474x/d9/e7/d3/d9e7d33341a2cc077e3b4fa665e2667d.jpg"
+    },
+    {
+      "title": "Little Bit Better",
+      "artist": "Caleb Hearn & ROSIE",
+      "src": "http://localhost:3000/Songs/LittleBitBetter.mp3",
+      "cover": "https://i.pinimg.com/736x/73/7a/59/737a5911cdd1405e76d46b8958d0d49d.jpg"
+    },
+    
+      {
+        "title": "Death Bed",
+        "artist": "Powfu",
+        "src": "http://localhost:3000/Songs/DeathBed.mp3",
+        "cover": "https://samplesongs.netlify.app/album-arts/death-bed.jpg"
+        
+      },
+      {
+        "title": "Bad Liar",
+        "artist": "Imagine Dragons",
+        "src": "http://localhost:3000/Songs/BadLiar.mp3",
+        "cover": "https://samplesongs.netlify.app/album-arts/bad-liar.jpg"
+        
+        
+      },
+      {
+        "title": "Faded",
+        "artist": "Alan Walker",
+         "src": "http://localhost:3000/Songs/Faded.mp3",
+        "cover": "https://samplesongs.netlify.app/album-arts/faded.jpg"
+       
+      },
+      {
+        "title": "Hate Me",
+        "artist": "Ellie Goulding",
+        "src": "http://localhost:3000/Songs/HateMe.mp3",
+        "cover": "https://samplesongs.netlify.app/album-arts/hate-me.jpg"
+        
+      },
+      {
+        "title": "Solo",
+        "artist": "Clean Bandit",
+        "src": "http://localhost:3000/Songs/Solo.mp3",
+        "cover": "https://samplesongs.netlify.app/album-arts/solo.jpg"
+       
+      },
+      {
+        "title": "Without Me",
+        "artist": "Halsey",
+        "src": "http://localhost:3000/Songs/WithoutMe.mp3",
+        "cover": "https://samplesongs.netlify.app/album-arts/without-me.jpg"
+        
+      }
+      
+  ]
+  

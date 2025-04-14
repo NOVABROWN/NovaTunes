@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f3e5f5, #e1bee7, #ce93d8);
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .app-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 220px;
+    background: linear-gradient(to bottom, #9c27b0, #673ab7, #3f51b5);
+    padding: 20px 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 20px 20px;
+    color: #fff;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .sidebar ul li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+  
+  .sidebar ul li img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
+  
+  /* Main View */
+  .main-view {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .top-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 20px;
+    width: 300px;
+  }
+  
+  .search-bar img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .content h3 {
+    color: #4a148c;
+    margin: 20px 0 10px;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 12px;
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.3s;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .card h4 {
+    margin: 4px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .card p {
+    font-size: 13px;
+    color: #ddd;
+  }
+  
+  /* Music Player */
+  footer.player {
+    background: linear-gradient(to right, #ab47bc, #7e57c2);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 220px;
+    right: 0;
+    height: 70px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .song-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .song-info .cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .song-info h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .song-info p {
+    margin: 0;
+    font-size: 13px;
+    color: #f0f0f0;
+  }
+  
+  .controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 8px;
+  }
+  
+  .controls button img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .volume-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .volume-bar img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .volume-bar input[type="range"] {
+    width: 100px;
+    height: 4px;
+    cursor: pointer;
+  }
+  
+  .card {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a18cd1);
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: #fff;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card h4 {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 1.1rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+
+  .card {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+  }
+  
+  #progress {
+    flex: 1;
+  }
+  
