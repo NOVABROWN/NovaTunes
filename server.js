@@ -86,5 +86,5 @@ app.post('/api/songs/upload', upload.single('song'), (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`✅ NovaTunes backend running at http://localhost:${PORT}`);
+  console.log(` NovaTunes backend running at http://localhost:${PORT}`);
 });
